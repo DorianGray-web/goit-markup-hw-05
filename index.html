@@ -49,12 +49,13 @@
     <main>
         <!--Hero-->
         <section class="overlay">
+
             <div class="hero">
 
                 <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
 
 
-                <button type="button" class="button primary">Замовити послугу</button>
+                <button type="button" class="button primary" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!--Peculiarities-->
@@ -417,7 +418,16 @@
             </div>
         </div>
     </footer>
-    <script src="./modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="closed" aria-label="Closed" data-modal-close>
+                <svg class="close" width="18" height="18">
+                    <use href="./image/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
