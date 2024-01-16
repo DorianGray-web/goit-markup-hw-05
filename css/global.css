@@ -118,6 +118,11 @@ header {
 
     color: var(--primary-white-color);
     background-color: var(--primary-link-color);
+
+    transition: background-color 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
 
 .button.primary {
@@ -128,6 +133,8 @@ header {
 .button.secondary {
     color: var(--title-text-color);
     background-color: var(--button-bcg-color);
+
+
 }
 
 .button.secondary:hover,
@@ -166,15 +173,18 @@ header {
 .nav-link {
     position: relative;
     color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
+
 
 .current {
     color: var(--primary-link-color);
 }
 
-.nav-menu .current::after,
-.nav-menu .nav-link:hover::after,
-.nav-menu .nav-link:focus::after {
+.nav-menu .current::after {
     position: absolute;
     content: "";
     display: block;
@@ -239,7 +249,12 @@ header {
 .adress-header .link {
     color: var(--primary-text-color);
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
+
 
 .item-icon-contact:not(:last-child) {
     margin-right: 30px;
@@ -322,6 +337,11 @@ svg.icon-social {
     letter-spacing: 0.03em;
     font-style: normal;
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
 
 .link-footer:hover,
@@ -357,6 +377,11 @@ svg.icon-social {
     background-color: var(--link-bcg-footer);
     color: var(--primary-white-color);
     border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1);
 }
 
 .social-links-footer:hover,
