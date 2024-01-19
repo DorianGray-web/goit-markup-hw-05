@@ -339,6 +339,7 @@ svg.icon {
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
 }
 
 
@@ -358,7 +359,11 @@ svg.icon {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
     transition: transform 250ms cubic-bezier(0.4,
+            0,
+            0.2,
+            1), opacity 250ms cubic-bezier(0.4,
             0,
             0.2,
             1);
